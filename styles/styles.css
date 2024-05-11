@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+
+.header {
+  padding-top: 80px;
+  padding-bottom: 61px;
+}
+
+.hero {
+  min-height: 358px;
+
+  outline: 1px solid tomato;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 88px;
+
+  overflow: hidden;
+}
+
+.hero-thumb {
+  padding-top: 47px;
+  width: 540px;
+  min-width: 540px;
+}
+
+.btn {
+  padding: 16px 40px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 29px;
+
+  cursor: pointer;
+}
+
+.hero-right-photo {
+  align-self: flex-end;
+}

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meet</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Meet landing page</title>
 
     <link
       rel="stylesheet"
@@ -16,10 +22,37 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-        
+    <header class="header">
+      <a class="logo" href="#"><img src="./assets/logo.svg" alt="Logo" /></a>
     </header>
 
-    <main></main>
+    <main>
+      <section class="hero">
+        <img
+          class="hero-left-photo"
+          src="./assets/desktop/image-hero-left.png"
+          alt="different people avatars"
+        />
+
+        <div class="hero-thumb">
+          <h1>Group Chat for Everyone</h1>
+          <p>
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+
+          <button class="btn" type="button">Download <span>v1.3</span></button>
+          <button class="btn" type="button">What is it?</button>
+        </div>
+
+        <img
+          class="hero-right-photo"
+          src="./assets/desktop/image-hero-right.png"
+          alt="different people avatars"
+        />
+      </section>
+
+      <section></section>
+    </main>
   </body>
 </html>
