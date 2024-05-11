@@ -33,15 +33,17 @@ p {
 }
 
 .hero {
+  position: relative;
   min-height: 358px;
+}
 
-  outline: 1px solid tomato;
+.overflow-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   column-gap: 88px;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero-thumb {
@@ -94,4 +96,37 @@ p {
 
 .hero-right-photo {
   align-self: flex-end;
+}
+
+.section-number {
+  position: absolute;
+  bottom: -194px;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 56px;
+  aspect-ratio: 1/1;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 162%;
+
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+}
+
+.section-number::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateY(-100%);
+  content: "";
+  width: 1px;
+  height: 84px;
+
+  background-color: rgba(135, 135, 157, 0.25);
 }
