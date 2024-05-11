@@ -35,6 +35,8 @@ p {
 .hero {
   position: relative;
   min-height: 358px;
+
+  margin-bottom: 314px;
 }
 
 .overflow-wrapper {
@@ -129,4 +131,35 @@ p {
   height: 84px;
 
   background-color: rgba(135, 135, 157, 0.25);
+}
+
+/* ===================================================== */
+
+.container {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photos-list {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 30px;
+}
+
+.photos-item {
+  width: 255px;
+  height: 242px;
+
+  line-height: 0;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  object-fit: cover;
 }
