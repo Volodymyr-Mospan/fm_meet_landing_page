@@ -181,6 +181,11 @@ p {
 
 /* ========================= smarter-section ============================ */
 
+.smarter-section {
+  position: relative;
+  margin-bottom: 184px;
+}
+
 .container {
   width: 1140px;
   padding: 0 15px;
@@ -210,11 +215,6 @@ p {
 .photo {
   width: 100%;
   object-fit: cover;
-}
-
-.smarter-section {
-  position: relative;
-  margin-bottom: 184px;
 }
 
 .accent-text {
@@ -298,9 +298,20 @@ p {
 }
 
 /* +++++++++++++++++++++++++ media +++++++++++++++++++++++++ */
-/* ========================= header ========================= */
 
 @media screen and (max-width: 1156px) {
+  body {
+    font-size: 16px;
+    line-height: 162%;
+  }
+
+  /* ========================= header ========================= */
+  /* ========================= hero ========================= */
+
+  .hero {
+    margin-bottom: 287px;
+  }
+
   .overflow-hidden {
     padding-top: 385px;
   }
@@ -316,6 +327,79 @@ p {
     right: 50%;
     transform: translate(calc(100% + 16px), -100%);
   }
-}
 
-/* ========================= hero ========================= */
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .section-number {
+    bottom: -220px;
+  }
+
+  /* ========================= smarter-section ========================= */
+  .smarter-section {
+    margin-bottom: 192px;
+  }
+
+  .container {
+    width: 768px;
+    padding: 0 39px;
+  }
+
+  .photos-list {
+    margin-bottom: 48px;
+    gap: 11px;
+  }
+
+  .photos-item {
+    width: 164px;
+    height: 156px;
+
+    line-height: 0;
+
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* ========================= footer ============================ */
+
+  .footer {
+    padding: 92px 0 66px 0;
+
+    text-align: center;
+    color: var(--second-text-color);
+
+    background-image: linear-gradient(
+        rgba(77, 150, 168, 0.8955) 0%,
+        rgba(77, 150, 168, 0.8955) 100%
+      ),
+      url(../assets/tablet/image-footer.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-title {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .footer-text {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 144%;
+  }
+
+  .btn-footer {
+    margin-left: 0;
+  }
+}
