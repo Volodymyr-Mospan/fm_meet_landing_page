@@ -1,6 +1,8 @@
 :root {
   --accent-color: #4d96a9;
+  --accent-color-hover: #71c0d4;
   --second-accent-color: #855fb1;
+  --second-accent-color-hover: #b18bdd;
 
   --version-color: #8fe3f9;
   --second-version-color: #d9b8ff;
@@ -27,10 +29,14 @@ p {
   margin: 0;
 }
 
+/* ========================= header ========================= */
+
 .header {
   padding-top: 80px;
   padding-bottom: 61px;
 }
+
+/* ======================== hero ============================= */
 
 .hero {
   position: relative;
@@ -48,6 +54,15 @@ p {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 1140px) {
+  .overflow-wrapper {
+    flex-wrap: wrap;
+  }
+  .hero-text-thumb {
+    order: 3;
+  }
+}
+
 .text-thumb {
   width: 540px;
   min-width: 540px;
@@ -58,7 +73,7 @@ p {
 
 .hero-text-thumb {
   margin: 0;
-  padding-top: 47px;
+  margin-top: 47px;
   display: flex;
   flex-direction: column;
   row-gap: 33px;
@@ -93,6 +108,8 @@ p {
   line-height: 162%;
   color: #fff;
 
+  transition: background-color 250ms ease-in-out;
+
   cursor: pointer;
 }
 
@@ -100,9 +117,19 @@ p {
   color: var(--version-color);
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color-hover);
+}
+
 .btn-second {
   padding: 16px 29px;
   background-color: var(--second-accent-color);
+}
+
+.btn-second:hover,
+.btn-second:focus {
+  background-color: var(--second-accent-color-hover);
 }
 
 .hero-right-photo {
@@ -145,7 +172,7 @@ p {
   background-color: rgba(135, 135, 157, 0.25);
 }
 
-/* ======================== hero ============================= */
+/* ========================= smarter-section ============================ */
 
 .container {
   width: 1140px;
@@ -177,8 +204,6 @@ p {
   width: 100%;
   object-fit: cover;
 }
-
-/* ========================= smarter-section ============================ */
 
 .smarter-section {
   position: relative;
@@ -259,3 +284,18 @@ p {
 .btn-footer-vetsion {
   color: var(--second-version-color);
 }
+
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: var(--second-accent-color-hover);
+}
+
+/* +++++++++++++++++++++++++ media +++++++++++++++++++++++++ */
+/* ========================= header ========================= */
+
+/* @media screen and (max-width: 1140px) {
+
+  
+} */
+
+/* ========================= hero ========================= */
