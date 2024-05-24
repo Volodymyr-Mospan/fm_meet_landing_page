@@ -15,4 +15,20 @@ p {
   margin: 0;
 }
 
+/* +++++++++++++++++++++++++ tablet +++++++++++++++++++++++++ */
 
+@media screen and (max-width: 1156px) {
+  body {
+    font-size: 16px;
+    line-height: 162%;
+  }
+}
+
+/* +++++++++++++++++++++++++ mobile +++++++++++++++++++++++++ */
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    line-height: 162%;
+  }
+}

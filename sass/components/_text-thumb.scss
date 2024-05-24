@@ -1,0 +1,38 @@
+.text-thumb {
+  width: 540px;
+  min-width: 540px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-text-thumb {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1156px) {
+  .text-thumb {
+    width: 573px;
+    min-width: 573px;
+  }
+
+  .hero-text-thumb {
+    width: 457px;
+    min-width: 457px;
+    row-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-thumb {
+    min-width: 327px;
+    width: 327px;
+  }
+}
