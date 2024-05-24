@@ -1,0 +1,55 @@
+.btn {
+  padding: 16px 40px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 29px;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 162%;
+  color: #fff;
+
+  transition: background-color 250ms ease-in-out;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+  }
+
+  &-version {
+    color: var(--version-color);
+  }
+}
+
+.btn-second {
+  padding: 16px 29px;
+  background-color: var(--second-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color-hover);
+  }
+}
+
+.btn-footer {
+  margin-left: 92px;
+  align-self: center;
+  background-color: var(--second-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color-hover);
+  }
+
+  &-vetsion {
+    color: var(--second-version-color);
+  }
+}
+
+@media screen and (max-width: 1156px) {
+  .btn-footer {
+    margin-left: 0;
+  }
+}
